@@ -1,0 +1,113 @@
+body{
+
+    margin: 0;
+    padding: 0px 0px 50px 0px;
+    background: linear-gradient(90deg, #4b1c71 20%, #dbb6ee 80%);
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* Works on Chrome, Edge, and Safari 
+*::-webkit-scrollbar { width: 5px; }
+*::-webkit-scrollbar-track { background: white; }   
+*::-webkit-scrollbar-thumb { background-color: black; border-radius: 5px; border: 1px solid white; }*/
+
+.content{
+
+    height: 75%;
+    width: 65%;
+    border-radius: 20px;
+    /*Esconde tudo que esta excedendo a classe referencia*/
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*Move o elemento em seu próprio eixo*/
+    transform: translate(-50%, -50%);
+
+
+}
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar{
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #000;
+    margin-right:20px;
+    cursor: pointer;
+    /*Tempo que terá a animação da classe*/
+    transition: .4s;
+    
+}
+.bar:hover { background-color: #000; border:1px solid #fff}
+
+input { display: none;}
+
+.slides { display: flex; width: 500%; height: 100%;}
+.slide { width: 20%; transition: .5s;}
+.slide img{ width: 100%; height: 100%;}
+
+#radio1:checked ~ .s1 {margin-left: 0;}
+#radio2:checked ~ .s1 {margin-left: -20%;}
+#radio3:checked ~ .s2 {margin-left: -40%;}
+#radio4:checked ~ .s3 {margin-left: -60%;}
+#radio5:checked ~ .s4 {margin-left: -80%;}
+/*GALERIA*/
+/*MENU*/
+.home-link,
+.animes-link,
+.calculadora-link,
+.list-link,
+.galeria-link{ 
+    
+    color:rgb(255, 36, 255); 
+    /*background-color: #fff;*/
+    border-radius: 5px;
+
+ }
+
+.home-link:hover{ 
+    
+    color:#000; 
+    background-color: rgb(255, 36, 255);
+    border-radius: 5px;
+
+ }
+ .animes-link:hover{ 
+    
+    color:#000; 
+    background-color: rgb(255, 36, 255);
+    border-radius: 5px;
+
+ }
+.calculadora-link:hover{ 
+    
+    color:#000; 
+    background-color: rgb(255, 36, 255);
+    border-radius: 5px;
+
+ }
+.list-link:hover{ 
+    
+    color:#000; 
+    background-color: rgb(255, 36, 255);
+    border-radius: 5px;
+
+ }
+ .galeria-link:hover{ 
+    
+    color:#000; 
+    background-color: rgb(255, 36, 255);
+    border-radius: 5px;
+
+ }
+/*MENU*/
